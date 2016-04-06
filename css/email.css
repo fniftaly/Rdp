@@ -1,0 +1,15 @@
+#checkrewards{height:100%; width: 100%; padding:25px;  
+              background: white; text-align: center}
+ul{ list-style: none}
+ul li span.cust-name{cursor: pointer}
+ul li span.cust-email{color: gray; font-style: italic}
+#rwd_coupon{width:100%; height: 30px; border: 2px solid black; text-align: center}
+ul li{margin-left: 12%; margin-top: 10px; text-align: initial;}
+#btn_back{border: 2px solid gray; width: 25%; height: 40px}
+#error_page{margin:0 18% 0 18%; display:none; border: 2px solid red}
+
+#error_page button{border: 2px solid gray; width: 100px}
+
+#email_div{display: none}
+
+#email_div #email_div_top{width:100%; margin-bottom: 15px;}

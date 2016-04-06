@@ -1,0 +1,16 @@
+#top_tr{height:80px; background: #31b0d5;}
+
+#top_tr span#rwd_text{width:100%;height:40%;  font-size: 16px;}
+
+#redeemed_response{color:black; font-size: 16px; font-weight: bold;
+                        display: none; text-align: center;}
+span#rwd_text{text-align: center;padding-top:15px}                    
+#client_name, #rwd_type{color:black; font-size: 18px; text-align: center;}
+
+#rwd_type{font-size: 16px;}
+
+#tr_redeem_rdm,#tr_cancel,#tr_redeem_ok,#tr_redeem_cancel_ok{color:black; text-align: center; display: none}
+
+#redeem_rdm,#close_info_popup,#cancel_redeem_ok,#redeem_ok{height: 30px; width:100px; margin: 5px;}
+
+#cancel_redeem_ok,#redeem_ok,#close_info_popup{margin-bottom: 10px}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  
+  
+  Date.prototype.toMysqlFormat = function () {
+    function pad(n) {
+        return n < 10 ? '0' + n : n;
+    }
+    return this.getFullYear() + "-" + pad(1 + this.getMonth()) + "-" +
+            pad(this.getDate()) + " " + pad(this.getHours()) + ":" +
+            pad(this.getMinutes()) + ":" + pad(this.getSeconds());
+}
+var time = new Date().toMysqlFormat();
+
+
+function stringToDate(s) {
+  var dateParts = s.split(' ')[0].split('-'); 
+  var timeParts = s.split(' ')[1].split(':');
+  var d = new Date(dateParts[0], --dateParts[1], dateParts[2]);
+  d.setHours(timeParts[0], timeParts[1], timeParts[2])
+
+  return d
+}
+
+var a = time;
+var b = "2016-03-04 14:30:00"
+alert(stringToDate(a) - stringToDate(b));
+
+//console.log(time);
+  
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+ 
+ 
+</body>
+</html>

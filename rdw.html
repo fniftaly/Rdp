@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome Birthday Message</title>
+        <script src="js/vendor/jquery-1.11.2.js" type="text/javascript"></script>
+        <script src="js/bdwelcome.js" type="text/javascript"></script>
+        <style>
+            body{font-family: serif; font-size: 16px; }
+            .bannerImg{
+                vertical-align:middle; width:600px; height:auto;
+            }
+
+            #tbl td{padding: 17px; width: 40%}
+
+            #dear_txt,#happy_birthday_txt,#enjoy_txt,#expired_txt,#description_txt{display:  none}
+
+            .happy_birthday_from{font-weight: bold; color:blue;}
+            
+        </style>
+    </head>
+    <body bgcolor="#ffffff" style="margin: 0px;padding:0; background-color:#ffffff;">
+        <table cellspacing="5" cellpadding="3" border="0" bgcolor="#ffffff" width="100%" id="tbl">
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <table class="mainTable" cellspacing="0" cellpadding="0" border="0" align="center" width="600">
+                            <tbody>
+
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <a target="_blank" href="#">
+                                            <img class="bannerImg" border="0" alt="" src="img/flatTop.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr><td><span id="dear" title="clickable">Dear</span>,
+                                        <input type="text" id="dear_txt" name="dear_txt" placeholder="your text here"/>
+                                        <span id="dear_customer">Bassan</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span id="happy_birthday" title="clickable">Happy birthday from</span>
+                                        <input type="text" id="happy_birthday_txt" name="happy_birthday_txt" placeholder="your text here" />
+                                        <span class="happy_birthday_from">Apple Computers</span>
+                                    </td>
+                                </tr>
+                                <!--enjoy part-->
+                                <tr>
+                                    <td><span id="enjoy" title="clickable">Enjoy On your birthday, get 50% off any item during the week of your birthday on</span>
+                                        <input type="text" id="enjoy_txt" name="happy_birthday_txt" size="80" placeholder="your text here" />
+                                        <span id="enjoy_day">May 05</span>
+                                    </td>
+                                </tr>
+                                <!--expired part-->
+                                <tr>
+                                    <td><span id="expired" title="clickable">Reward expires one week after your birthday </span>
+                                        <input type="text" id="expired_txt" name="expired_txt" size="70" placeholder="your text here"/>
+                                    </td>
+                                </tr>
+                                <!--condition part-->
+                                <tr>
+                                    <td><span id="description" title="clickable">May not be combined with any other promotional offer, discounted gift card or gift certificate</span>
+                                        <input type="text" id="description_txt" name="description_txt" size="90" placeholder="your text here"/>
+                                    </td>
+                                </tr>
+                                <!--merchant part-->
+                                <tr>
+                                    <td><span class="happy_birthday_from" title="clickable">Apple Computers</span>
+                                    </td>
+                                </tr>
+                                <!--Cake part-->
+                                <tr>
+                                    <td><a href="#"><img src="img/cakebirthday.png" id="cake_birthday"/></a>
+                                    </td>
+                                </tr>
+                                <!--line --->
+                                <tr>
+                                    <td><hr/></td>
+                                </tr>
+                                <!--FT and other-->
+                                <tr style="padding:3px">
+                                    <td style="text-align: center; padding: 1px;"><a href="#"><img src="img/ficon.png"/></a>&nbsp;
+                                        <a href="#" style="padding: 10px;"><img src="img/ticon.png"/></a>&nbsp;
+                                        <a href="#"><img src="img/picon.png"/></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

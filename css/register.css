@@ -1,0 +1,28 @@
+#register_ok,#register_cancel{width:100px; height: 40px; margin: 10px; border: 1px solid cadetblue;}
+
+#user_register{position: absolute; border: 1px solid black; display: none; font-family:monospace; background: #d2e6ee}
+
+#r_cancel, #r_submit,#strbckw,#btn_return{height: 49%; border:1px solid graytext}
+
+#register_form{display: none; margin: 10px; height: auto;}
+
+#register_form td input[type='text'],#register_form td button{border: 1px solid cadetblue;}
+
+#register_form p.reg_form_title{font-weight: bold;}
+
+
+#register_form tr td:nth-child(1){
+    width:30%;
+    padding:5px;
+}
+.btn_resize{width:100px; height: 30px;}
+
+#register_sms{
+    margin-left: 20px;
+    -webkit-transform: scale(1.6,1.6);
+    -moz-transform: scale(1.6,1.6);
+    -o-transform: scale(1.6,1.6);
+}
+
+/*label{font-size: 6px;}*/
+
