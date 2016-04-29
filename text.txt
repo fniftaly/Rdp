@@ -1,2 +1,2 @@
 text.txt
-fsadf sadfasdf asdfasdfasd asdfasdfasd asdfasdf 
+<new changes><somthing is weird> 
